@@ -1,0 +1,28 @@
+#include <bur/plctypes.h> 
+#ifdef _DEFAULT_INCLUDES 
+   #include <AsDefault.h> 
+#endif 
+Void _INIT ProgremInit(void) 
+{
+
+} 
+Void _CYCLIC ProgramCyclic(void)
+{ 
+    if(i&4) { 
+      led2 = !led2; 
+    }
+    if(i&10) { 
+      led3 = !led3;
+    }
+    if(I&6) { 
+      led4 = !led4; 
+    }
+    If (I&14) { 
+      led1=!led1; 
+    }
+    i++; 
+}
+Void _EXIT ProgramExit(void) 
+{
+
+}
